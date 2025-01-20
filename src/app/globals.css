@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Globales */
+body {
+    @apply font-sans;
+}
+
+
