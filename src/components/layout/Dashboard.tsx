@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { ChevronRight, ChevronLeft, Cabin, Work, People } from '@mui/icons-material'
 import clsx from 'clsx'
 
 export default function Dashboard() {
 	const [isExpanded, setIsExpanded] = useState(false)
 	const [isClient, setIsClient] = useState(false)
-	const router = useRouter()
+	const router = useRouter();
+	const pathname = usePathname();
+	console.log(pathname)
 
 	useEffect(() => {
 		setIsClient(typeof window !== 'undefined')
@@ -49,7 +51,7 @@ export default function Dashboard() {
 							key={item.path}
 							className={clsx(
 								'flex flex-col items-center justify-center md:items-start',
-								router.pathname === item.path ? 'text-accent500' : 'text-white500',
+								pathname === item.path ? 'text-accent500' : 'text-white500',
 								'hover:text-primary700'
 							)}
 						>
