@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import Swal from 'sweetalert2';
 import { useRouter } from 'next/navigation'
 import Link from 'next/link';
+import Cookies from 'js-cookie';
 import { FaArrowLeft, FaArrowRight, FaEye, FaEyeSlash, } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import PhoneInput from 'react-phone-input-2';
@@ -63,25 +64,19 @@ export default function RegisterForm() {
       confirmPassword:"",
     },
     validationSchema,
-    onSubmit: async  (values, {resetForm}) => {
+    onSubmit: async  (values) => {
       setLoading(true);
-      const {name, lastName,email, password, phoneNumber, birthDate} = values;
+      const {name ,email, lastName, phoneNumber, password,country, birthDate} = values;
 
       const dataForRegisterUser = {
-        photoUrl: "string",
         name: name,
         lastName: lastName,
         email: email,
         password: password,
         phoneNumber: Number(phoneNumber),
-        birthDate: `${birthDate}T00:00:00` ,
-        roleDto: {
-          roles: [
-            "USER"
-          ]
-        }
+        birthDate: `${birthDate}T00:00:00` ,    
+        country:country,
       };
-      
 
     try {
       const response = await fetchRegisterUser(dataForRegisterUser);
@@ -93,9 +88,19 @@ export default function RegisterForm() {
           showConfirmButton: false,
           timer: 1500
         });
-        resetForm();
+        const dataCookies = {
+          email: response.email,
+          token: response.jwt,
+          userId: response.userId,
+        }
+
+        Cookies.set('userLogged', JSON.stringify(dataCookies), {
+          secure: true,
+          sameSite: 'strict',
+          expires: 7, 
+        });
         setLoading(false);
-        router.push("/account/login");
+        router.push("/app/home");
         return;
       } 
     } catch (error) {
@@ -126,7 +131,7 @@ export default function RegisterForm() {
 
   const handleNext = () => {
     if (validateStep()) {
-      console.log(validateStep());
+      // console.log(validateStep());
       setStep(step + 1);
     } else {
       
@@ -296,7 +301,7 @@ export default function RegisterForm() {
                     <label htmlFor="phoneNumber" className="block mb-4 text-sm font-medium text-gray-900">Número de Teléfono</label>
                     
                       <PhoneInput
-                            country={'ar'}
+                            // country={'ar'}
                             value={formik.values.phoneNumber}
                             onChange={(phoneNumber) => {
                               formik.setFieldValue('phoneNumber', phoneNumber);

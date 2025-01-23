@@ -2,19 +2,23 @@
 import isUserLogged from '@/utils/isUserLogged';
 import { redirect } from 'next/navigation';
 import React from 'react';
+import Navbar from '../../../components/layout/Navbar';
+import Dashboard from '@/components/layout/Dashboard';
 
 
 const AppLayout: React.FC<{ children: React.ReactNode }> = async ({ children }) => {
 
-    const token = await isUserLogged(); 
+    const token = await isUserLogged();
     if (token === false) {
         redirect('/account/login');
     }
-    
+
 
     return (
         <div className=''>
-            {children}
+            <Navbar />
+            <main>{children}</main>
+            <Dashboard />
         </div>
     );
 };

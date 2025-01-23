@@ -15,12 +15,12 @@ export default function BalanceCard({ amount }: BalanceCardProps) {
 						<p className='text-p3-regular'>Balance disponible</p>
 						<h6 className='text-h6-bold'>$ {amount}</h6>
 					</div>
-					<Button size='small' variant='solid' className='rounded-full'>Agregar Fondos</Button>
+					<Button size='small' variant='solid' className='rounded-3xl'>Agregar Fondos</Button>
 				</div>
 			</div>
 			{amount === 0
-				? <div className='flex w-full py-1 px-2 bg-success text-white900 rounded-md'>
-						<span className='text-white100'><FlagCircle /></span>
+				? <div className='flex items-center justify-start space-x-2 w-full py-1 px-2 bg-primary100 text-white900 rounded-md'>
+						<span className='text-accent50'><FlagCircle /></span>
 						<p className='text-p3-regular'>Agrega tus primeros fondos para conseguir tus metas.</p>
 					</div>
 				: ' '}

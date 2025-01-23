@@ -64,6 +64,7 @@ export default function LoginForm() {
           const dataCookies = {
             email: response.email,
             token: response.token,
+            userId: response.id,
           }
 
           Cookies.set('userLogged', JSON.stringify(dataCookies), {
