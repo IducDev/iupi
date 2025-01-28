@@ -8,20 +8,26 @@ import Step6 from "./step6";
 import Step7 from "./step7";
 
 export interface TestData {
-    age: "Más de 55 años" | "Entre 35-55 años" | "Menos de 35 años" | "";  
-    experience: "Ninguna experiencia" | "Alguna experiencia con productos básicos" | "Experiencia amplia con diversos instrumentos" | "";
+    finance: "Las finanzas son básicamente como manejamos nuestro dinero" | "Conozco sobre sobre varios instrumentos y he invertido en acciones y nuevas empresas" | "Sé un poco sobre inversiones y he puesto mi dinero en bonos y cuentas de ahorro" | "";  
+    objective: "Mantener mi dinero a salvo (ahorrando)" | "Ganar un poco sin arriesgar demasiado (invertir con precaución)" | "Apostar por grandes ganancias asumiendo más riesgos (invertir con audacia)" | "";
     time: "Menos de 2 años" | "Entre 2 y 5 años" | "Más de 5 años" | "";
     lost: "Vendo todo inmediatamente" | "Espero un tiempo antes de tomar una decisión" | "Aprovecho para comprar más" | "";
-    objective: "Preservar mi capital" | "Obtener un rendimiento moderado con riesgo limitado" | "Maximizar rendimientos asumiendo mayores riesgos" | "";
+    income: number |"",
+    expenses: number | "",
+    savings: string |"",
+
   }
   
 
 export interface ErrorData {
-    age: string;
-    experience: string;
+    finance: string;
+    objective: string;
     time: string;
     lost: string;
-    objective: string;
+    income: string,
+    expenses: string,
+    savings: string,
+
 }
 
 

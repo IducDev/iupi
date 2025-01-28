@@ -7,6 +7,7 @@ interface User {
   email: string;
   photoUrl: string;
   phoneNumber: number;
+  registerDate: string;
   birthDate: string;
   roles: string[];
 }
@@ -25,6 +26,7 @@ export const useUserStore = create<UserStore>((set) => ({
     email: '',
     photoUrl: '',
     phoneNumber: 0,
+    registerDate:"",
     birthDate: '',
     roles: [],
   },
@@ -37,6 +39,7 @@ export const useUserStore = create<UserStore>((set) => ({
       email: '',
       photoUrl: '',
       phoneNumber: 0,
+      registerDate:"",
       birthDate: '',
       roles: [],
     },

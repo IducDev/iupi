@@ -98,7 +98,7 @@ export default function Step3({
       </form>
 
       <div className="flex flex-col h-full justify-end  m-auto lg:w-[25em]">
-        <Button variant={test.time === "" ? "basic" : "solid" } size="small" onClick={handleNextStep}>
+        <Button variant={test.time === "" ? "basic" : "solid" } size="small" onClick={handleNextStep} className="rounded-full">
           Siguiente
         </Button>
       </div>

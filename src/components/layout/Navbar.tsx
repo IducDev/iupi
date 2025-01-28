@@ -4,6 +4,8 @@ import clsx from 'clsx'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image';
 import Input from '../ui/Input';
+import Link from 'next/link';
+import { Notifications } from '@mui/icons-material';
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -31,10 +33,12 @@ export default function Navbar() {
 						className='w-[120px] rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500'
 					/>
 				</div>
+
 				{/* Avatar and Hamburger Menu */}
 				<div className='flex items-center gap-4'>
-					{/* User Avatar */}
-					<div className='w-8 h-8 rounded-full bg-gray-300 overflow-hidden'>
+					{/* User Avatar and Notifications */}
+					<Notifications className='cursor-pointer' onClick={() => {console.log('Notifications') }} />
+					{/* <div className='w-8 h-8 rounded-full bg-gray-300 overflow-hidden'>
 						<Image
 							src='/Avatar.png'
 							alt='Avatar'
@@ -42,7 +46,7 @@ export default function Navbar() {
 							height={150}
 							className='w-full h-full object-cover'
 						/>
-					</div>
+					</div> */}
 
 					{/* Hamburger Menu Icon */}
 					<button
@@ -76,14 +80,14 @@ export default function Navbar() {
 
 				{/* Mobile Links */}
 				<ul className='flex flex-col gap-4 text-gray-700'>
-					<li>Perfil</li>
-					<li>Notificaciones</li>
-					<li>Mensajes</li>
-					<li>Historial de operaciones</li>
-					<li>Metas financieras</li>
-					<li>Sobre iUpi</li>
-					<li>Política de privacidad</li>
-					<li>Términos y condiciones</li>
+					<li><Link href={'#'}>Perfil</Link></li>
+					<li><Link href={'#'}>Notificaciones</Link></li>
+					<li><Link href={'#'}>Mensajes</Link></li>
+					<li><Link href={'#'}>Historial de operaciones</Link></li>
+					<li><Link href={'#'}>Metas financieras</Link></li>
+					<li><Link href={'#'}>Sobre iUpi</Link></li>
+					<li><Link href={'#'}>Política de privacidad</Link></li>
+					<li><Link href={'#'}>Términos y condiciones</Link></li>
 				</ul>
 			</div>
 		</header>

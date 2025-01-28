@@ -44,7 +44,7 @@ export default function Step4({
   };
 
   return (
-    <div className="w-[94%] ml-auto mr-auto h-[18.5em] lg:h-[17.5em]">
+    <div className="w-[94%] ml-auto mr-auto h-[18.7em] lg:h-[17.5em]">
         {noti && <BlueNoti message={error.lost} />}
       <h1 className="text-h6-medium text-center w-[17em] m-auto p-1 pt-4">
         Si tus inversiones pierden 20% de su valor ¿Qué harías?
@@ -101,8 +101,8 @@ export default function Step4({
         </div>
       </form>
 
-      <div className="flex flex-col h-full justify-end  m-auto lg:w-[25em] ">
-          <Button variant={test.lost === "" ? "basic" : "solid" } size="small" onClick={handleNextStep}>
+      <div className="flex flex-col h-full justify-end  m-auto lg:w-[25em] rounded-full ">
+          <Button variant={test.lost === "" ? "basic" : "solid" } size="small" className="rounded-full" onClick={handleNextStep}>
           Siguiente
         </Button>
       </div>

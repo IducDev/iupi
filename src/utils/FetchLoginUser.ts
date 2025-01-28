@@ -1,3 +1,4 @@
+const URL = process.env.NEXT_PUBLIC_API_URL;
 
 export  interface LoginUser {   
     email: string;
@@ -8,7 +9,7 @@ export  interface LoginUser {
 export const fetchLoginUser = async (userData: LoginUser) => {
 
     try {
-        const response = await fetch(`https://fintech-ggjf.onrender.com/auth/login`, {
+        const response = await fetch(`${URL}/auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

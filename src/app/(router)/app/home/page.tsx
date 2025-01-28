@@ -1,45 +1,44 @@
 "use client"
-import { AccountBalance, ShoppingBag, Storage, LegendToggle } from '@mui/icons-material'
 import BalanceCard from "@/components/cards/BalanceCard";
-import FinanceCard from "@/components/cards/FinanceCard";
 import GoalCard from "@/components/cards/GoalCard";
+import { useState, useEffect } from 'react';
+import { useFinancialProfileStore } from '@/store/user/userFinanceProfile';
 import RecommendationCard from '@/components/cards/RecommendationCard';
+import getUserProfile from '@/utils/financialProfile/getProfile';
+import Onbording from '@/components/modal/Onbording/onbording';
+import FinancialSampleCard from '@/components/cards/FinancialSampleCard';
 
 export default function Home() {
+  const { financialProfile } = useFinancialProfileStore();
+  const [formFinanceProfile, setFormFinanceProfile] = useState(false);
+
+useEffect(() => {
+  getUserProfile();
+  if (!financialProfile) {
+    setFormFinanceProfile(true);
+  } else {
+    setFormFinanceProfile(false);
+  }
+}, [financialProfile]);
+
 
   const userGoals = [
     {
-      title: "Viaje a Japon con millas",
-      amount: 250000,
-      percentage: 50,
-    },
-    {
       title: "Mi propia casa en el interior",
       amount: 5000000,
-      percentage: 30
+      mode: 'saving'
     },
+    {
+      title: "Viaje a Japon con millas",
+      amount: 250000,
+      mode: 'pleasure'
+    },
+    {
+      title: "Comprar un automovil",
+      amount: 1000000,
+      mode: 'buying'
+    }
   ];
-
-  const incomeData = [
-    { label: 'Fondos mutuos', icon: <LegendToggle />, path: '/income/mutual-funds' },
-    { label: 'Stocks', icon: <AccountBalance />, path: '/income/stocks' },
-    { label: 'ETFS', icon: <Storage />, path: '/income/etfs' },
-    { label: 'Acciones', icon: <ShoppingBag />, path: '/income/actions' }
-  ]
-
-  const expenseData = [
-    { label: 'Fondos mutuos', icon: <LegendToggle />, path: '/expenses/mutual-funds' },
-    { label: 'Stocks', icon: <AccountBalance />, path: '/expenses/stocks' },
-    { label: 'ETFS', icon: <Storage />, path: '/expenses/etfs' },
-    { label: 'Acciones', icon: <ShoppingBag />, path: '/expenses/actions' }
-  ]
-
-  const savingsData = [
-    { label: 'Fondos mutuos', icon: <LegendToggle />, path: '/savings/mutual-funds' },
-    { label: 'Stocks', icon: <AccountBalance />, path: '/savings/stocks' },
-    { label: 'ETFS', icon: <Storage />, path: '/savings/etfs' },
-    { label: 'Acciones', icon: <ShoppingBag />, path: '/savings/actions' }
-  ]
 
   const recommendations = [
     {
@@ -64,19 +63,55 @@ export default function Home() {
     }
   ]
 
+  const financialData = [
+    {
+      title: 'Ingresos',
+      icon: '/img/MoneyBag.png',
+      value: 12545.59,
+      path: '/details/incomes'
+    },
+    {
+      title: 'Gastos',
+      icon: '/img/MoneyWings.png',
+      value: 10750.9,
+      path: '/details/expenses'
+    },
+    {
+      title: 'Capacidad de ahorro',
+      icon: '/img/ClappingHands.png',
+      value: 14.3,
+      path: '/details/savings'
+    },
+    {
+      title: 'Total de deudas',
+      icon: '/img/FlagInHole.png',
+      value: 50000,
+      path: '/details/debts'
+    }
+  ]
+
 
   return (
     <main className="px-4 pt-6 pb-24 space-y-4 w-full bg-primary300">
-      <BalanceCard amount={0.00} />
+      {formFinanceProfile && <Onbording />}
+      <BalanceCard title="Tus rendimientos" amount={10250.45} earning={871.29} />
 
-      <FinanceCard title="Ingresos" items={incomeData} />
-      <FinanceCard title="Gastos" items={expenseData} />
-      <FinanceCard title="Capacidad de ahorro" items={savingsData} />
-
-      <RecommendationCard title="Recomendado para ti" items={recommendations}/>
-
+      {/* Financial samples */}
+      <div className='flex flex-wrap gap-4 lg:w-[80%] lg:mx-auto'>
+        {financialData.map((data, index) => (
+          <FinancialSampleCard
+            key={index}
+            title={data.title}
+            icon={data.icon}
+            value={data.value}
+            path={data.path}
+          />
+        )
+        )}
+      </div>
 
       <GoalCard goals={userGoals} />
+      <RecommendationCard title="Recomendado para ti" items={recommendations} />
     </main>
   );
 }

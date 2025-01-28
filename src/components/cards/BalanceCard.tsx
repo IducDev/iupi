@@ -1,29 +1,35 @@
 import React from 'react'
 import Button from '../ui/Button'
-import { FlagCircle } from '@mui/icons-material'
+import Link from 'next/link'
 
 interface BalanceCardProps {
+	title: string
 	amount: number
+	earning: number
 }
 
-export default function BalanceCard({ amount }: BalanceCardProps) {
+export default function BalanceCard({ title, amount, earning }: BalanceCardProps) {
 	return (
-		<div className='p-4 bg-white50 text-white900 rounded-2xl'>
-			<div className='flex flex-col'>
-				<div className='flex flex-row items-center justify-between'>
-					<div>
-						<p className='text-p3-regular'>Balance disponible</p>
-						<h6 className='text-h6-bold'>$ {amount}</h6>
-					</div>
-					<Button size='small' variant='solid' className='rounded-3xl'>Agregar Fondos</Button>
+		<div className='p-4 bg-white50 text-white900 rounded-2xl lg:w-[80%] lg:mx-auto'>
+			<div className='flex flex-col space-y-4'>
+				{/* Header */}
+				<div>
+					<p className='text-p1-bold'>{title}</p>
+				</div>
+				{/* Content */}
+				<div className='space-y-3'>
+					<h3 className='text-h3-bold'>$ {amount.toLocaleString()} </h3>
+					<p className='text-p1-regular text-white600'>
+						<span className='text-success700'> + $ {earning}</span> en 12 meses
+					</p>
+				</div>
+				{/* Footer */}
+				<div className='w-full'>
+					<Link href={'#'}>
+						<Button size='large' variant='solid' className='rounded-3xl w-full'>Invertir</Button>
+					</Link>
 				</div>
 			</div>
-			{amount === 0
-				? <div className='flex items-center justify-start space-x-2 w-full py-1 px-2 bg-primary100 text-white900 rounded-md'>
-						<span className='text-accent50'><FlagCircle /></span>
-						<p className='text-p3-regular'>Agrega tus primeros fondos para conseguir tus metas.</p>
-					</div>
-				: ' '}
 		</div>
 	)
 }

@@ -1,3 +1,4 @@
+const URL = process.env.NEXT_PUBLIC_API_URL;
 export interface RegisterUser {
     name: string;
     lastName: string;
@@ -20,7 +21,7 @@ export interface RegisterUser {
     // console.log(dataForRegisterUser);
   
     try {
-      const response = await fetch("https://fintech-ggjf.onrender.com/auth/register", {
+      const response = await fetch(`${URL}/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

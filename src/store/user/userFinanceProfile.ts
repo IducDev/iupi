@@ -13,35 +13,13 @@ interface FinancialProfile {
 }
 
 interface FinancialProfileStore {
-  financialProfile: FinancialProfile;
+  financialProfile: FinancialProfile | null; 
   setFinancialProfile: (profile: FinancialProfile) => void;
   clearFinancialProfile: () => void;
 }
 
 export const useFinancialProfileStore = create<FinancialProfileStore>((set) => ({
-  financialProfile: {
-    id: 0,
-    knowledgeLevel: '',
-    riskProfile: '',
-    incomeMonthly: 0,
-    expensesMonthly: 0,
-    percentageSave: 0,
-    totalDebt: 0,
-    savingsTotal: 0,
-    patrimonyTotal: 0,
-  },
+  financialProfile: null, 
   setFinancialProfile: (profile: FinancialProfile) => set({ financialProfile: profile }),
-  clearFinancialProfile: () => set({
-    financialProfile: {
-      id: 0,
-      knowledgeLevel: '',
-      riskProfile: '',
-      incomeMonthly: 0,
-      expensesMonthly: 0,
-      percentageSave: 0,
-      totalDebt: 0,
-      savingsTotal: 0,
-      patrimonyTotal: 0,
-    },
-  }),
+  clearFinancialProfile: () => set({ financialProfile: null }), 
 }));
