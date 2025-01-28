@@ -21,7 +21,7 @@ export default function Profile() {
 
         <section className="flex flex-row justify-between items-center p-6 w-full">
             <div className="flex flex-row gap-4">
-                <button><Image src={ArrowLargeLeft} alt=""/></button>
+                <button><Image src={ArrowLargeLeft} alt="arrowleft"/></button>
                 <h1 className="text-h6-bold text-white900">Perfil</h1>
             </div>
 
