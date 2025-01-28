@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import getUserData from "@/utils/getUserData";
 import Image from "next/image";
-import { ArrowLargeLeft } from "@/assets";
+import { ArrowLargeLeft } from "@/assets/index";
 import SettingsIcon from '@mui/icons-material/Settings';
 import { ProfileUser } from "@/components/cards/ProfileCard";
 import { RiskProfileUser } from "@/components/cards/RiskProfileCard";
