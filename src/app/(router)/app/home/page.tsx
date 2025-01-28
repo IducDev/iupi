@@ -22,7 +22,13 @@ useEffect(() => {
 }, [financialProfile]);
 
 
-  const userGoals = [
+  type Goal = {
+    title: string;
+    amount: number;
+    mode: 'saving' | 'pleasure' | 'buying';
+  };
+
+  const userGoals: Goal[] = [
     {
       title: "Mi propia casa en el interior",
       amount: 5000000,
