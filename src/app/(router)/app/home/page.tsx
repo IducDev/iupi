@@ -31,7 +31,7 @@ export default function Home() {
   }, [financialProfile, modalState, openModal] );
 
 
-  const userGoals = [
+  let userGoals = [
     {
       title: "Mi propia casa en el interior",
       amount: 5000000,
@@ -49,7 +49,7 @@ export default function Home() {
     }
   ];
 
-  const recommendations = [
+  let recommendations = [
     {
       label: 'Fondo de Crecimiento en Tecnología',
       description: 'Basado en tu perfil de inversor.',
@@ -72,7 +72,7 @@ export default function Home() {
     }
   ]
 
-  const financialData = [
+  let financialData = [
     {
       title: 'Ingresos',
       icon: '/img/MoneyBag.png',
