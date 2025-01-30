@@ -34,7 +34,7 @@ export default function Portfolio() {
 		}
 	]
 
-	const assets = [
+	const assets: { name: string; price: string; change: string; trend: 'positive' | 'negative'; }[] = [
 		{ name: 'Apple Inc.', price: '$15.09', change: '+1.2%', trend: 'positive' },
 		{ name: 'Tesla Inc.', price: '$688.99', change: '-0.8%', trend: 'negative' },
 		{ name: 'Amazon Inc.', price: '$3,334.69', change: '+2.8%', trend: 'positive' },
