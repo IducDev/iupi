@@ -40,7 +40,7 @@ export default function GoalCard({ goals }: GoalsCardProps) {
 	const goalList = Array.isArray(goals) ? goals : [goals]
 
 	return (
-		<div className='flex flex-col p-4 space-y-6 bg-white50 rounded-2xl lg:w-[80%] lg:mx-auto'>
+		<div className='flex flex-col p-4 space-y-6 bg-white50 rounded-2xl lg:w-[90%] lg:mx-auto'>
 			{/* Header */}
 			<div className='flex items-center justify-between'>
 				<div className='flex items-center space-x-2'>

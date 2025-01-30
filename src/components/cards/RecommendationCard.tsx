@@ -15,7 +15,7 @@ interface RecommendationProps {
 
 export default function RecommendationCard({ title, items }: RecommendationProps) {
 	return (
-		<div className='flex flex-col space-y-4 bg-white50 text-white900 shadow-lg rounded-2xl p-6 lg:w-[80%] lg:mx-auto'>
+		<div className='flex flex-col space-y-4 bg-white50 text-white900 shadow-lg rounded-2xl p-6 lg:w-[90%] lg:mx-auto'>
 			<div>
 				<h6 className='text-h6-bold'>{title}</h6>
 			</div>

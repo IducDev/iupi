@@ -1,13 +1,13 @@
 import { useFinancialProfileStore } from "@/store/user/userFinanceProfile"
 import Button from "../ui/Button"
 import Image from "next/image"
-import { useState } from "react";
+import { useModalStore } from "@/store/onBording/modal";
 import { CazadorUser, ExploradorUser, SembradorUser, SkipUser} from "@/assets";
 import Onbording from "../modal/Onbording/onbording";
 
 export const RiskProfileUser = () =>{
 
-    const [formFinanceProfile, setFormFinanceProfile] = useState(false);
+    const { modalState, openModal} = useModalStore(); 
 
     const { financialProfile } = useFinancialProfileStore();
     let msg
@@ -21,12 +21,9 @@ export const RiskProfileUser = () =>{
     if (financialProfile?.riskProfile === "Cazador de inversiones"){ img = CazadorUser ; msg = "Buscas inversiones de riesgo moderado y buen retorno." ; goals = "Crecimiento de largo plazo"; time="Mínimo 5 años"; level="Arriesgado" }
     if (financialProfile?.riskProfile === "SKIP") {img=SkipUser ; msg="Aún no haz realizado el Test del Inversor."; goals = "Sin identificar" ; time="Sin identificar"}
 
-    const handleOpen = () =>{
-        setFormFinanceProfile(true)
-    }
     return (
     <div className="border border-white200 rounded-lg ">
-        {formFinanceProfile && <Onbording/>}
+        {modalState === "Abierto" && <Onbording />}
         <div className="flex flex-row gap-5 ">
             <div className="flex flex-col w-[50%] gap-1 p-3">
                 <h1 className="text-h6-bold text-white900 ">{financialProfile?.riskProfile === "SKIP" ? "Test Omitido" : financialProfile?.riskProfile}</h1>
@@ -58,11 +55,11 @@ export const RiskProfileUser = () =>{
         ?
         <div className="p-2 flex flex-col gap-3">
             <Button variant="solid" size="small" className="rounded-full">Ver más detalles</Button>
-            <Button variant="basic" size="small" className="rounded-full" onClick={handleOpen}>Test del Inversor</Button>
+            <Button variant="basic" size="small" className="rounded-full" onClick={openModal}>Test del Inversor</Button>
         </div>
             :
         <div className="p-2 flex flex-col mb-2" >
-            <Button variant="solid" size="small" className="flex rounded-full" onClick={handleOpen}>Test del Inversor</Button>
+            <Button variant="solid" size="small" className="flex rounded-full" onClick={openModal}>Test del Inversor</Button>
             </div> }
     </div>)
 }

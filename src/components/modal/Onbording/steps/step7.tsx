@@ -3,14 +3,20 @@ import { useFinancialProfileStore } from "@/store/user/userFinanceProfile";
 import Image from "next/image";
 import { Sembrador, Cazador, Explorador, WarningBlue } from "@/assets";
 import { redirect } from 'next/navigation';
+import { useModalStore } from "@/store/onBording/modal";
 
 export default function Step7() {
   const { financialProfile } = useFinancialProfileStore();
+  const { closeModal } = useModalStore()
   let message = "";
   let img
 
   const handleHome = () =>{
     redirect("/")
+  }
+
+  const handleStay = () =>{
+    closeModal()
   }
 
   if (financialProfile?.riskProfile === "Sembrador de oportunidades") {
@@ -60,7 +66,7 @@ export default function Step7() {
 
       <div className="flex flex-col gap-3 w-[90%]  m-auto lg:w-[25em]">
 
-          <Button variant="solid" size="small" onClick={handleHome} className="rounded-full">
+          <Button variant="solid" size="small" onClick={handleStay} className="rounded-full">
             Empecemos la aventura
           </Button>
 

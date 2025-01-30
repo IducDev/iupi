@@ -1,8 +1,7 @@
 "use client";
 import { useEffect } from "react";
-import getUserData from "@/utils/getUserData";
 import Image from "next/image";
-import { ArrowLargeLeft } from "@/assets/index";
+import { ArrowLargeLeft } from "@/assets";
 import SettingsIcon from '@mui/icons-material/Settings';
 import { ProfileUser } from "@/components/cards/ProfileCard";
 import { RiskProfileUser } from "@/components/cards/RiskProfileCard";
@@ -12,7 +11,6 @@ import { ProgressUser } from "@/components/cards/ProgressUserCard";
 export default function Profile() {
 
     useEffect(()=>{
-        getUserData()
         getUserProfile()
     }) 
     
@@ -21,7 +19,7 @@ export default function Profile() {
 
         <section className="flex flex-row justify-between items-center p-6 w-full">
             <div className="flex flex-row gap-4">
-                <button><Image src={ArrowLargeLeft} alt="arrowleft"/></button>
+                <button><Image src={ArrowLargeLeft} alt=""/></button>
                 <h1 className="text-h6-bold text-white900">Perfil</h1>
             </div>
 

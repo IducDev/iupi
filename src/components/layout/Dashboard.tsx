@@ -30,29 +30,29 @@ export default function Dashboard() {
 	return (
 		<nav
 			className={clsx(
-				'fixed text-white500 bg-white z-50 shadow-2xl',
-				'w-full bottom-0 2xl:w-20 2xl:h-full 2xl:top-[106px] 2xl:left-0',
-				isExpanded && '2xl:w-64',
-				'2xl:border-r 2xl:border-gray-200'
+				'fixed text-white500 bg-white z-50 shadow-4xl',
+				'w-full bottom-0 4xl:w-20 4xl:h-full 4xl:top-[106px] 4xl:left-0',
+				isExpanded && '4xl:w-64',
+				'4xl:border-r 4xl:border-gray-200'
 			)}
 		>
-			<div className="flex 2xl:flex-col items-center justify-between 2xl:justify-start 2xl:space-y-12 py-4 px-6 h-full">
+			<div className="flex 4xl:flex-col items-center justify-between 4xl:justify-start 4xl:space-y-12 py-4 px-6 h-full">
 				{/* Toggle button for vertical menu */}
 				<button
 					onClick={toggleMenu}
-					className="hidden 2xl:block focus:outline-none"
+					className="hidden 4xl:block focus:outline-none"
 					aria-label="Toggle menu"
 				>
 					{isExpanded ? <ChevronLeft /> : <ChevronRight />}
 				</button>
 
 				{/* Menu items */}
-				<ul className={clsx('flex 2xl:flex-col justify-around 2xl:justify-start 2xl:space-y-6 w-full')}>
+				<ul className={clsx('flex 4xl:flex-col justify-around 4xl:justify-start 4xl:space-y-6 w-full')}>
 					{menuItems.map((item) => (
 						<li
 							key={item.path}
 							className={clsx(
-								'flex items-center justify-center 2xl:justify-start 2xl:items-center',
+								'flex items-center justify-center 4xl:justify-start 4xl:items-center',
 								pathname === item.path ? 'text-accent500' : 'text-gray-500',
 								'hover:text-primary700'
 							)}
@@ -60,16 +60,16 @@ export default function Dashboard() {
 							<button
 								onClick={() => router.push(item.path)}
 								className={clsx(
-									'flex flex-col 2xl:flex-row items-center 2xl:gap-2 gap-1 text-center focus:outline-none',
-									isExpanded ? '2xl:flex-row' : '2xl:flex-col'
+									'flex flex-col 4xl:flex-row items-center 4xl:gap-2 gap-1 text-center focus:outline-none',
+									isExpanded ? '4xl:flex-row' : '4xl:flex-col'
 								)}
 							>
 								{item.icon}
 								<span
 									className={clsx(
-										'text-xs 2xl:text-sm',
-										'2xl:block',
-										!isExpanded && '2xl:hidden'
+										'text-xs 4xl:text-sm',
+										'4xl:block',
+										!isExpanded && '4xl:hidden'
 									)}
 								>
 									{item.label}

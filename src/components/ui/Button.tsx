@@ -28,7 +28,7 @@ export default function Button({
 			// Variant styles
 			'bg-accent300 text-white hover:bg-blue-700 focus:ring-blue-500': variant === 'solid',
 			'border border-blue-600 text-blue-600 hover:bg-blue-50 focus:ring-blue-500': variant === 'outline',
-			'text-blue-600 hover:underline focus:ring-blue-500': variant === 'text',
+			'bg-transparent hover:bg-transparent focus:outline-none focus:ring-0 active:bg-transparent active:border-none': variant === 'text',
 			'bg-white text-white700 border font-semibold shadow-lg border-white200 focus:ring-blue-500': variant === 'basic',
 
 			// Loading/Disabled styles

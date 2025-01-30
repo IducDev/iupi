@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { LogoAzul } from "@/assets";
 import confeti from "@/assets/animations/confeti.json";
 import LottieAnimation from "@/components/animations/lottieAnimation";
 import { useMediaQuery } from "react-responsive";
 import { sendProfileFinance } from "@/utils/financialProfile/sendfinancialProfile";
-// import getUserProfile from "@/utils/financialProfile/getProfile";
 import { StepProps } from ".";
 
 export default function Step6({ nextStep, test }: StepProps) {
@@ -13,22 +12,31 @@ export default function Step6({ nextStep, test }: StepProps) {
   const [showConfetti, setShowConfetti] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
+  const hasExecuted = useRef(false);
+
   useEffect(() => {
+    if (hasExecuted.current) return;
+    hasExecuted.current = true;
+
+
     sendProfileFinance(test)
       .then(() => {
-        setTimeout(() => setStage(1), 1000); 
         setTimeout(() => {
-          setStage(2);
-          setShowConfetti(true);
-        }, 2500); 
+          setStage(1); 
+        }, 1000);
+
         setTimeout(() => {
-          setShowConfetti(false);
+          setStage(2); 
+          setShowConfetti(true); 
+        }, 2500);
+
+        setTimeout(() => {
+          setShowConfetti(false); 
           nextStep();
         }, 5000);
       })
       .catch((error) => {
         console.error("Error al enviar datos o recuperar perfil:", error);
-        nextStep();
       });
   }, [nextStep, test]);
 

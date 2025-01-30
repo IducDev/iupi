@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import assignProfileFinance from "@/lib/testOnbording";
 import { useFinancialProfileStore } from "@/store/user/userFinanceProfile";
 
-const URL = process.env.NEXT_PUBLIC_API_URL;
+const URL = process.env.NEXT_PUBLIC_API_URL 
 
 async function sendProfileFinance(test: TestData): Promise<void> {
   const userLogged = JSON.parse(Cookies.get("userLogged") || "{}");
@@ -26,8 +26,9 @@ async function sendProfileFinance(test: TestData): Promise<void> {
       percentageSave: savings,
     });
 
+    // console.log("idUser", userId)
+    // console.log("response",response )
     const profileData = response.data;
-    
     updateStore(profileData);
 
     return profileData;
@@ -36,27 +37,23 @@ async function sendProfileFinance(test: TestData): Promise<void> {
     if (axios.isAxiosError(error) && error.response?.status === 500) {
       const financialData = useFinancialProfileStore.getState().financialProfile;
 
-      if (!financialData) {
-        console.error("No se encontró el perfil financiero en el store.");
-        return;
-      }
 
       const updatedProfile = {
-        knowledgeLevel: financialData.knowledgeLevel || "",
+        knowledgeLevel: financialData?.knowledgeLevel || "",
         riskProfile,
         incomeMonthly: income ,
         expensesMonthly: expenses ,
         percentageSave: savings ,
-        totalDebt: financialData.totalDebt ?? 0.1,
-        savingsTotal: financialData.savingsTotal ?? 0.1,
-        patrimonyTotal: financialData.patrimonyTotal ?? 0.1,
+        totalDebt: financialData?.totalDebt ?? 0.1,
+        savingsTotal: financialData?.savingsTotal ?? 0.1,
+        patrimonyTotal: financialData?.patrimonyTotal ?? 0.1,
         userId,
       };
 
 
       try {
         const response = await axios.patch(
-          `${URL}/financing-profile/${financialData.id}`,
+          `${URL}/financing-profile/${financialData?.id}`,
           updatedProfile,
           {
             headers: {
@@ -65,6 +62,9 @@ async function sendProfileFinance(test: TestData): Promise<void> {
             },
           }
         );
+        console.log("financialData", updatedProfile)
+        console.log("idUser", userId)
+        console.log("response",response )
 
         const profileData = response.data;
 
