@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLargeLeft } from "@/assets";
+import { ArrowLargeLeft } from "@/assets/index";
 import Image from "next/image";
 import { SliderCommunity } from '@/components/slider/community';
 
