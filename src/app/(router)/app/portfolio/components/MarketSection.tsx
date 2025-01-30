@@ -2,7 +2,16 @@ import Button from '@/components/ui/Button'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-const mockData = {
+type MarketData = {
+	id: string;
+	name: string;
+	company?: string;
+	price: number;
+	change: number;
+	trend: string;
+};
+
+const mockData: Record<string, MarketData[]> = {
 	'En alsa': [
 		{ id: 'TSLA', name: 'Tesla Inc.', company: 'Tesla', price: 785.22, change: 3.1, trend: 'up' },
 		{ id: 'MSFT', name: 'Microsoft Corp.', company: 'Microsoft', price: 315.42, change: 2.5, trend: 'up' },
