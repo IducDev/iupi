@@ -28,7 +28,7 @@ export default function Home() {
     }
 
       getUserData()
-  }, [financialProfile, modalState] );
+  }, [financialProfile, modalState, openModal] );
 
 
   const userGoals = [
