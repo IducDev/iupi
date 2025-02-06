@@ -8,7 +8,7 @@ import { ArrowBackIos } from '@mui/icons-material'
 import Label from '@/components/ui/Label'
 import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
-import { apiGoal } from '@/utils/goalData/fetchGoal'
+import { apiGoal } from '../../../../../utils/goalData/FetchGoal'
 
 export default function Goals() {
 	const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
