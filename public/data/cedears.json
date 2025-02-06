@@ -1,0 +1,213 @@
+[
+      {
+        "meta": {
+          "symbol": "AAPL.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Apple Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 230, "high": 235, "low": 225, "close": 230, "volume": 50000, "adjclose": 230 },
+          { "date": "2025-01-26", "open": 231, "high": 237, "low": 229, "close": 233, "volume": 52000, "adjclose": 233 },
+          { "date": "2025-01-27", "open": 234, "high": 240, "low": 232, "close": 238, "volume": 51000, "adjclose": 238 },
+          { "date": "2025-01-28", "open": 236, "high": 241, "low": 233, "close": 239, "volume": 50000, "adjclose": 239 },
+          { "date": "2025-01-29", "open": 237, "high": 243, "low": 234, "close": 241, "volume": 49000, "adjclose": 241 },
+          { "date": "2025-01-30", "open": 240, "high": 245, "low": 238, "close": 242, "volume": 48000, "adjclose": 242 },
+          { "date": "2025-01-31", "open": 243, "high": 248, "low": 240, "close": 245, "volume": 47500, "adjclose": 245 },
+          { "date": "2025-02-01", "open": 246, "high": 250, "low": 244, "close": 248, "volume": 47000, "adjclose": 248 },
+          { "date": "2025-02-02", "open": 249, "high": 253, "low": 245, "close": 251, "volume": 46000, "adjclose": 251 },
+          { "date": "2025-02-03", "open": 250, "high": 255, "low": 248, "close": 252, "volume": 45500, "adjclose": 252 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "TSLA.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Tesla Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 380, "high": 385, "low": 375, "close": 380, "volume": 30000, "adjclose": 380 },
+          { "date": "2025-01-26", "open": 381, "high": 387, "low": 378, "close": 383, "volume": 29000, "adjclose": 383 },
+          { "date": "2025-01-27", "open": 382, "high": 389, "low": 379, "close": 385, "volume": 31000, "adjclose": 385 },
+          { "date": "2025-01-28", "open": 384, "high": 391, "low": 380, "close": 387, "volume": 32000, "adjclose": 387 },
+          { "date": "2025-01-29", "open": 385, "high": 393, "low": 381, "close": 388, "volume": 33000, "adjclose": 388 },
+          { "date": "2025-01-30", "open": 386, "high": 395, "low": 382, "close": 390, "volume": 34000, "adjclose": 390 },
+          { "date": "2025-01-31", "open": 387, "high": 396, "low": 384, "close": 391, "volume": 35000, "adjclose": 391 },
+          { "date": "2025-02-01", "open": 388, "high": 398, "low": 385, "close": 392, "volume": 36000, "adjclose": 392 },
+          { "date": "2025-02-02", "open": 390, "high": 400, "low": 386, "close": 394, "volume": 37000, "adjclose": 394 },
+          { "date": "2025-02-03", "open": 391, "high": 402, "low": 387, "close": 395, "volume": 38000, "adjclose": 395 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "MSFT.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Microsoft Corporation"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 410, "high": 415, "low": 405, "close": 410, "volume": 25000, "adjclose": 410 },
+          { "date": "2025-01-26", "open": 411, "high": 416, "low": 407, "close": 412, "volume": 26000, "adjclose": 412 },
+          { "date": "2025-01-27", "open": 413, "high": 418, "low": 409, "close": 414, "volume": 27000, "adjclose": 414 },
+          { "date": "2025-01-28", "open": 415, "high": 420, "low": 411, "close": 416, "volume": 28000, "adjclose": 416 },
+          { "date": "2025-01-29", "open": 417, "high": 422, "low": 413, "close": 418, "volume": 29000, "adjclose": 418 },
+          { "date": "2025-01-30", "open": 418, "high": 423, "low": 414, "close": 419, "volume": 30000, "adjclose": 419 },
+          { "date": "2025-01-31", "open": 420, "high": 425, "low": 416, "close": 421, "volume": 31000, "adjclose": 421 },
+          { "date": "2025-02-01", "open": 421, "high": 426, "low": 417, "close": 422, "volume": 32000, "adjclose": 422 },
+          { "date": "2025-02-02", "open": 423, "high": 428, "low": 419, "close": 424, "volume": 33000, "adjclose": 424 },
+          { "date": "2025-02-03", "open": 424, "high": 429, "low": 420, "close": 425, "volume": 34000, "adjclose": 425 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "AMZEN.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Amazon.com Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 240, "high": 245, "low": 235, "close": 240, "volume": 32000, "adjclose": 240 },
+          { "date": "2025-01-26", "open": 241, "high": 246, "low": 237, "close": 242, "volume": 31000, "adjclose": 242 },
+          { "date": "2025-01-27", "open": 243, "high": 248, "low": 240, "close": 244, "volume": 30000, "adjclose": 244 },
+          { "date": "2025-01-28", "open": 245, "high": 250, "low": 242, "close": 246, "volume": 29000, "adjclose": 246 },
+          { "date": "2025-01-29", "open": 247, "high": 252, "low": 244, "close": 248, "volume": 28000, "adjclose": 248 },
+          { "date": "2025-01-30", "open": 248, "high": 253, "low": 245, "close": 250, "volume": 27000, "adjclose": 250 },
+          { "date": "2025-01-31", "open": 249, "high": 254, "low": 246, "close": 251, "volume": 26000, "adjclose": 251 },
+          { "date": "2025-02-01", "open": 250, "high": 255, "low": 247, "close": 252, "volume": 25000, "adjclose": 252 },
+          { "date": "2025-02-02", "open": 251, "high": 256, "low": 248, "close": 253, "volume": 24000, "adjclose": 253 },
+          { "date": "2025-02-03", "open": 252, "high": 257, "low": 249, "close": 254, "volume": 23000, "adjclose": 254 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "NVDA.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "NVIDIA Corporation"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 440, "high": 445, "low": 435, "close": 440, "volume": 29000, "adjclose": 440 },
+          { "date": "2025-01-26", "open": 441, "high": 446, "low": 436, "close": 442, "volume": 28000, "adjclose": 442 },
+          { "date": "2025-01-27", "open": 442, "high": 448, "low": 437, "close": 445, "volume": 27000, "adjclose": 445 },
+          { "date": "2025-01-28", "open": 443, "high": 450, "low": 438, "close": 446, "volume": 26000, "adjclose": 446 },
+          { "date": "2025-01-29", "open": 444, "high": 451, "low": 439, "close": 447, "volume": 25000, "adjclose": 447 },
+          { "date": "2025-01-30", "open": 445, "high": 452, "low": 440, "close": 448, "volume": 24000, "adjclose": 448 },
+          { "date": "2025-01-31", "open": 446, "high": 453, "low": 441, "close": 449, "volume": 23000, "adjclose": 449 },
+          { "date": "2025-02-01", "open": 447, "high": 454, "low": 442, "close": 450, "volume": 22000, "adjclose": 450 },
+          { "date": "2025-02-02", "open": 448, "high": 455, "low": 443, "close": 451, "volume": 21000, "adjclose": 451 },
+          { "date": "2025-02-03", "open": 449, "high": 456, "low": 444, "close": 452, "volume": 20000, "adjclose": 452 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "GOOGL.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Alphabet Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 1150, "high": 1160, "low": 1140, "close": 1150, "volume": 20000, "adjclose": 1150 },
+          { "date": "2025-01-26", "open": 1151, "high": 1162, "low": 1141, "close": 1152, "volume": 19000, "adjclose": 1152 },
+          { "date": "2025-01-27", "open": 1153, "high": 1165, "low": 1142, "close": 1155, "volume": 18000, "adjclose": 1155 },
+          { "date": "2025-01-28", "open": 1154, "high": 1166, "low": 1143, "close": 1157, "volume": 17000, "adjclose": 1157 },
+          { "date": "2025-01-29", "open": 1156, "high": 1168, "low": 1144, "close": 1158, "volume": 16000, "adjclose": 1158 },
+          { "date": "2025-01-30", "open": 1157, "high": 1169, "low": 1145, "close": 1160, "volume": 15000, "adjclose": 1160 },
+          { "date": "2025-01-31", "open": 1158, "high": 1170, "low": 1146, "close": 1161, "volume": 14000, "adjclose": 1161 },
+          { "date": "2025-02-01", "open": 1160, "high": 1172, "low": 1147, "close": 1163, "volume": 13000, "adjclose": 1163 },
+          { "date": "2025-02-02", "open": 1161, "high": 1173, "low": 1148, "close": 1164, "volume": 12000, "adjclose": 1164 },
+          { "date": "2025-02-03", "open": 1162, "high": 1174, "low": 1149, "close": 1165, "volume": 11000, "adjclose": 1165 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "META.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Meta Platforms Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 170, "high": 175, "low": 165, "close": 170, "volume": 22000, "adjclose": 170 },
+          { "date": "2025-01-26", "open": 171, "high": 176, "low": 166, "close": 172, "volume": 21000, "adjclose": 172 },
+          { "date": "2025-01-27", "open": 172, "high": 177, "low": 167, "close": 174, "volume": 20000, "adjclose": 174 },
+          { "date": "2025-01-28", "open": 173, "high": 178, "low": 168, "close": 175, "volume": 19000, "adjclose": 175 },
+          { "date": "2025-01-29", "open": 174, "high": 179, "low": 169, "close": 176, "volume": 18000, "adjclose": 176 },
+          { "date": "2025-01-30", "open": 175, "high": 180, "low": 170, "close": 177, "volume": 17000, "adjclose": 177 },
+          { "date": "2025-01-31", "open": 176, "high": 181, "low": 171, "close": 178, "volume": 16000, "adjclose": 178 },
+          { "date": "2025-02-01", "open": 177, "high": 182, "low": 172, "close": 179, "volume": 15000, "adjclose": 179 },
+          { "date": "2025-02-02", "open": 178, "high": 183, "low": 173, "close": 180, "volume": 14000, "adjclose": 180 },
+          { "date": "2025-02-03", "open": 179, "high": 184, "low": 174, "close": 181, "volume": 13000, "adjclose": 181 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "BRKB.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Berkshire Hathaway Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 330, "high": 335, "low": 325, "close": 330, "volume": 18000, "adjclose": 330 },
+          { "date": "2025-01-26", "open": 331, "high": 336, "low": 326, "close": 332, "volume": 17000, "adjclose": 332 },
+          { "date": "2025-01-27", "open": 332, "high": 337, "low": 327, "close": 334, "volume": 16000, "adjclose": 334 },
+          { "date": "2025-01-28", "open": 333, "high": 338, "low": 328, "close": 335, "volume": 15000, "adjclose": 335 },
+          { "date": "2025-01-29", "open": 334, "high": 339, "low": 329, "close": 336, "volume": 14000, "adjclose": 336 },
+          { "date": "2025-01-30", "open": 335, "high": 340, "low": 330, "close": 337, "volume": 13000, "adjclose": 337 },
+          { "date": "2025-01-31", "open": 336, "high": 341, "low": 331, "close": 338, "volume": 12000, "adjclose": 338 },
+          { "date": "2025-02-01", "open": 337, "high": 342, "low": 332, "close": 339, "volume": 11000, "adjclose": 339 },
+          { "date": "2025-02-02", "open": 338, "high": 343, "low": 333, "close": 340, "volume": 10000, "adjclose": 340 },
+          { "date": "2025-02-03", "open": 339, "high": 344, "low": 334, "close": 341, "volume": 9000, "adjclose": 341 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "AMZN.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Amazon.com Inc."
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 140, "high": 145, "low": 135, "close": 140, "volume": 15000, "adjclose": 140 },
+          { "date": "2025-01-26", "open": 141, "high": 146, "low": 136, "close": 142, "volume": 14000, "adjclose": 142 },
+          { "date": "2025-01-27", "open": 142, "high": 147, "low": 137, "close": 144, "volume": 13000, "adjclose": 144 },
+          { "date": "2025-01-28", "open": 143, "high": 148, "low": 138, "close": 145, "volume": 12000, "adjclose": 145 },
+          { "date": "2025-01-29", "open": 144, "high": 149, "low": 139, "close": 146, "volume": 11000, "adjclose": 146 },
+          { "date": "2025-01-30", "open": 145, "high": 150, "low": 140, "close": 147, "volume": 10000, "adjclose": 147 },
+          { "date": "2025-01-31", "open": 146, "high": 151, "low": 141, "close": 148, "volume": 9000, "adjclose": 148 },
+          { "date": "2025-02-01", "open": 147, "high": 152, "low": 142, "close": 149, "volume": 8000, "adjclose": 149 },
+          { "date": "2025-02-02", "open": 148, "high": 153, "low": 143, "close": 150, "volume": 7000, "adjclose": 150 },
+          { "date": "2025-02-03", "open": 149, "high": 154, "low": 144, "close": 151, "volume": 6000, "adjclose": 151 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "DIS.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "The Walt Disney Company"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 100, "high": 105, "low": 95, "close": 100, "volume": 14000, "adjclose": 100 },
+          { "date": "2025-01-26", "open": 101, "high": 106, "low": 96, "close": 102, "volume": 13000, "adjclose": 102 },
+          { "date": "2025-01-27", "open": 102, "high": 107, "low": 97, "close": 104, "volume": 12000, "adjclose": 104 },
+          { "date": "2025-01-28", "open": 103, "high": 108, "low": 98, "close": 105, "volume": 11000, "adjclose": 105 },
+          { "date": "2025-01-29", "open": 104, "high": 109, "low": 99, "close": 106, "volume": 10000, "adjclose": 106 },
+          { "date": "2025-01-30", "open": 105, "high": 110, "low": 100, "close": 107, "volume": 9000, "adjclose": 107 },
+          { "date": "2025-01-31", "open": 106, "high": 111, "low": 101, "close": 108, "volume": 8000, "adjclose": 108 },
+          { "date": "2025-02-01", "open": 107, "high": 112, "low": 102, "close": 109, "volume": 7000, "adjclose": 109 },
+          { "date": "2025-02-02", "open": 108, "high": 113, "low": 103, "close": 110, "volume": 6000, "adjclose": 110 },
+          { "date": "2025-02-03", "open": 109, "high": 114, "low": 104, "close": 111, "volume": 5000, "adjclose": 111 }
+        ]
+      }
+    ]
+  

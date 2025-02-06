@@ -1,3 +1,4 @@
+import CurrencySwitchBtn from '@/components/ui/CurrencySwitchBtn'
 import React from 'react'
 
 interface InvestmentCardProps {
@@ -9,8 +10,9 @@ interface InvestmentCardProps {
 export default function InvestmentCard({ title, amount, earning }: InvestmentCardProps) {
 	return (
 		<div className='flex flex-col justify-start space-y-4 p-8 shadow-sm rounded-lg'>
-			<div>
+			<div className='flex justify-between items-center'>
 				<p className='text-p1-bold'>{title}</p>
+				<CurrencySwitchBtn />
 			</div>
 			<div className='space-y-2'>
 				<h3 className='text-h3-bold'>$ {amount.toLocaleString()}</h3>

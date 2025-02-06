@@ -3,7 +3,7 @@ import React, { useState} from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Swal from 'sweetalert2';
-import { useRouter } from 'next/navigation'
+import { redirect, useRouter } from 'next/navigation'
 import Link from 'next/link';
 import Cookies from 'js-cookie';
 import { FaArrowLeft, FaArrowRight, FaEye, FaEyeSlash, } from "react-icons/fa";
@@ -14,7 +14,7 @@ import { MODIFIED_COUNTRIES } from '@/lib/countryList';
 import Select from 'react-select';
 import PasswordRequirements from '@/components/PasswordRequirements';
 import { fetchRegisterUser } from '@/utils/FetchRegisterUser';
-
+const URL = process.env.NEXT_PUBLIC_API_URL 
 
 export default function RegisterForm() {
     const [loading, setLoading] = useState(false);
@@ -116,6 +116,10 @@ export default function RegisterForm() {
     },
   });
 
+    const loginGoogle = () =>{
+      redirect(`${URL}/oauth2/authorization/google`)
+    }
+
   const validateStep = () => {
     switch (step) {
       case 1:
@@ -208,7 +212,7 @@ export default function RegisterForm() {
                     <span className="flex-shrink mx-4 text-gray-400">o</span>
                     <div className="flex-grow border-t border-gray-400"></div>
                   </div>
-                  <button type="button" className="w-full mt-5 text-black font-bold bg-white border border-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300  rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 flex items-center justify-center">
+                  <button type="button" onClick={loginGoogle} className="w-full mt-5 text-black font-bold bg-white border border-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300  rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 flex items-center justify-center">
                     <FcGoogle width={20} height={20} className="mr-2" />
                     Continuar con Google
                   </button>

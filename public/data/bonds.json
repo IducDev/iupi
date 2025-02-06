@@ -1,0 +1,214 @@
+[
+      {
+        "meta": {
+          "symbol": "AL30.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono AL30"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 100, "high": 105, "low": 98, "close": 102, "volume": 10000, "adjclose": 102 },
+          { "date": "2025-01-26", "open": 102, "high": 106, "low": 101, "close": 105, "volume": 12000, "adjclose": 105 },
+          { "date": "2025-01-27", "open": 105, "high": 107, "low": 103, "close": 106, "volume": 11000, "adjclose": 106 },
+          { "date": "2025-01-28", "open": 106, "high": 108, "low": 104, "close": 107, "volume": 11500, "adjclose": 107 },
+          { "date": "2025-01-29", "open": 107, "high": 109, "low": 106, "close": 108, "volume": 12000, "adjclose": 108 },
+          { "date": "2025-01-30", "open": 108, "high": 110, "low": 106, "close": 109, "volume": 12500, "adjclose": 109 },
+          { "date": "2025-01-31", "open": 109, "high": 111, "low": 107, "close": 110, "volume": 13000, "adjclose": 110 },
+          { "date": "2025-02-01", "open": 110, "high": 112, "low": 108, "close": 111, "volume": 13500, "adjclose": 111 },
+          { "date": "2025-02-02", "open": 111, "high": 113, "low": 109, "close": 112, "volume": 14000, "adjclose": 112 },
+          { "date": "2025-02-03", "open": 112, "high": 114, "low": 110, "close": 113, "volume": 14500, "adjclose": 113 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "AL35.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono AL35"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 200, "high": 205, "low": 198, "close": 202, "volume": 8000, "adjclose": 202 },
+          { "date": "2025-01-26", "open": 202, "high": 208, "low": 200, "close": 207, "volume": 10000, "adjclose": 207 },
+          { "date": "2025-01-27", "open": 207, "high": 210, "low": 205, "close": 208, "volume": 9500, "adjclose": 208 },
+          { "date": "2025-01-28", "open": 208, "high": 212, "low": 206, "close": 210, "volume": 10000, "adjclose": 210 },
+          { "date": "2025-01-29", "open": 210, "high": 214, "low": 208, "close": 212, "volume": 10500, "adjclose": 212 },
+          { "date": "2025-01-30", "open": 212, "high": 216, "low": 210, "close": 214, "volume": 11000, "adjclose": 214 },
+          { "date": "2025-01-31", "open": 214, "high": 218, "low": 212, "close": 216, "volume": 11500, "adjclose": 216 },
+          { "date": "2025-02-01", "open": 216, "high": 220, "low": 214, "close": 218, "volume": 12000, "adjclose": 218 },
+          { "date": "2025-02-02", "open": 218, "high": 222, "low": 216, "close": 220, "volume": 12500, "adjclose": 220 },
+          { "date": "2025-02-03", "open": 220, "high": 224, "low": 218, "close": 222, "volume": 13000, "adjclose": 222 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "GD30.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono GD30"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 300, "high": 310, "low": 295, "close": 308, "volume": 25000, "adjclose": 308 },
+          { "date": "2025-01-26", "open": 308, "high": 315, "low": 305, "close": 312, "volume": 28000, "adjclose": 312 },
+          { "date": "2025-01-27", "open": 312, "high": 318, "low": 310, "close": 316, "volume": 29000, "adjclose": 316 },
+          { "date": "2025-01-28", "open": 316, "high": 320, "low": 314, "close": 318, "volume": 30000, "adjclose": 318 },
+          { "date": "2025-01-29", "open": 318, "high": 323, "low": 316, "close": 320, "volume": 31000, "adjclose": 320 },
+          { "date": "2025-01-30", "open": 320, "high": 325, "low": 318, "close": 323, "volume": 32000, "adjclose": 323 },
+          { "date": "2025-01-31", "open": 323, "high": 328, "low": 321, "close": 325, "volume": 33000, "adjclose": 325 },
+          { "date": "2025-02-01", "open": 325, "high": 330, "low": 323, "close": 328, "volume": 34000, "adjclose": 328 },
+          { "date": "2025-02-02", "open": 328, "high": 332, "low": 326, "close": 330, "volume": 35000, "adjclose": 330 },
+          { "date": "2025-02-03", "open": 330, "high": 335, "low": 328, "close": 332, "volume": 36000, "adjclose": 332 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "GD35.BA",
+          "currency": "USD",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono GD35"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 400, "high": 410, "low": 395, "close": 405, "volume": 40000, "adjclose": 405 },
+          { "date": "2025-01-26", "open": 405, "high": 415, "low": 400, "close": 410, "volume": 42000, "adjclose": 410 },
+          { "date": "2025-01-27", "open": 410, "high": 420, "low": 405, "close": 415, "volume": 43000, "adjclose": 415 },
+          { "date": "2025-01-28", "open": 415, "high": 425, "low": 410, "close": 420, "volume": 44000, "adjclose": 420 },
+          { "date": "2025-01-29", "open": 420, "high": 430, "low": 415, "close": 425, "volume": 45000, "adjclose": 425 },
+          { "date": "2025-01-30", "open": 425, "high": 435, "low": 420, "close": 430, "volume": 46000, "adjclose": 430 },
+          { "date": "2025-01-31", "open": 430, "high": 440, "low": 425, "close": 435, "volume": 47000, "adjclose": 435 },
+          { "date": "2025-02-01", "open": 435, "high": 445, "low": 430, "close": 440, "volume": 48000, "adjclose": 440 },
+          { "date": "2025-02-02", "open": 440, "high": 450, "low": 435, "close": 445, "volume": 49000, "adjclose": 445 },
+          { "date": "2025-02-03", "open": 445, "high": 455, "low": 440, "close": 450, "volume": 50000, "adjclose": 450 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "TX24.BA",
+          "currency": "ARS",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono del Tesoro Nacional en Pesos con Ajuste por CER 2% Vencimiento 2024"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 100, "high": 105, "low": 98, "close": 102, "volume": 10000, "adjclose": 102 },
+          { "date": "2025-01-26", "open": 102, "high": 106, "low": 101, "close": 104, "volume": 12000, "adjclose": 104 },
+          { "date": "2025-01-27", "open": 104, "high": 108, "low": 103, "close": 106, "volume": 11000, "adjclose": 106 },
+          { "date": "2025-01-28", "open": 106, "high": 110, "low": 105, "close": 108, "volume": 13000, "adjclose": 108 },
+          { "date": "2025-01-29", "open": 108, "high": 112, "low": 107, "close": 110, "volume": 14000, "adjclose": 110 },
+          { "date": "2025-01-30", "open": 110, "high": 114, "low": 109, "close": 112, "volume": 15000, "adjclose": 112 },
+          { "date": "2025-01-31", "open": 112, "high": 116, "low": 111, "close": 114, "volume": 16000, "adjclose": 114 },
+          { "date": "2025-02-01", "open": 114, "high": 118, "low": 113, "close": 116, "volume": 17000, "adjclose": 116 },
+          { "date": "2025-02-02", "open": 116, "high": 120, "low": 115, "close": 118, "volume": 18000, "adjclose": 118 },
+          { "date": "2025-02-03", "open": 118, "high": 122, "low": 117, "close": 120, "volume": 19000, "adjclose": 120 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "TX26.BA",
+          "currency": "ARS",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono del Tesoro Nacional en Pesos con Ajuste por CER 2% Vencimiento 2026"
+        },
+        "body": [
+          { "date": "2025-01-25", "open": 1757.50, "high": 1800.00, "low": 1743.50, "close": 1760.00, "volume": 15550394, "adjclose": 1760.00 },
+          { "date": "2025-01-26", "open": 1760.00, "high": 1849.00, "low": 1743.50, "close": 1790.00, "volume": 15550394, "adjclose": 1790.00 },
+          { "date": "2025-01-27", "open": 1790.00, "high": 1850.00, "low": 1750.00, "close": 1800.00, "volume": 15550394, "adjclose": 1800.00 },
+          { "date": "2025-01-28", "open": 1800.00, "high": 1850.00, "low": 1750.00, "close": 1820.00, "volume": 15550394, "adjclose": 1820.00 },
+          { "date": "2025-01-29", "open": 1820.00, "high": 1850.00, "low": 1750.00, "close": 1830.00, "volume": 15550394, "adjclose": 1830.00 },
+          { "date": "2025-01-30", "open": 1830.00, "high": 1850.00, "low": 1750.00, "close": 1840.00, "volume": 15550394, "adjclose": 1840.00 },
+          { "date": "2025-01-31", "open": 1840.00, "high": 1850.00, "low": 1750.00, "close": 1850.00, "volume": 15550394, "adjclose": 1850.00 },
+          { "date": "2025-02-01", "open": 1850.00, "high": 1850.00, "low": 1750.00, "close": 1850.00, "volume": 15550394, "adjclose": 1850.00 },
+          { "date": "2025-02-02", "open": 1850.00, "high": 1850.00, "low": 1750.00, "close": 1850.00, "volume": 15550394, "adjclose": 1850.00 },
+          { "date": "2025-02-03", "open": 1850.00, "high": 1850.00, "low": 1750.00, "close": 1850.00, "volume": 15550394, "adjclose": 1850.00 }
+        ]
+      },
+      {
+        "meta": {
+          "symbol": "PR13.BA",
+          "currency": "ARS",
+          "exchangeName": "BCBA",
+          "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+          "longName": "Bono Provincial de Buenos Aires 2023"
+        },
+      "body": [
+        { "date": "2025-01-25", "open": 100, "high": 105, "low": 98, "close": 102, "volume": 10000, "adjclose": 102 },
+        {"date": "2025-01-26", "open": 102, "high": 106, "low": 101, "close": 105, "volume": 12000, "adjclose": 105 },
+        { "date": "2025-01-27", "open": 105, "high": 108, "low": 104, "close": 107, "volume": 11000, "adjclose": 107 },
+        { "date": "2025-01-28", "open": 107, "high": 111, "low": 106, "close": 109, "volume": 13000, "adjclose": 109 },
+        { "date": "2025-01-29", "open": 109, "high": 113, "low": 108, "close": 111, "volume": 14000, "adjclose": 111 },
+        { "date": "2025-01-30", "open": 111, "high": 115, "low": 110, "close": 113, "volume": 15000, "adjclose": 113 },
+        { "date": "2025-01-31", "open": 113, "high": 117, "low": 112, "close": 115, "volume": 16000, "adjclose": 115 },
+        { "date": "2025-02-01", "open": 115, "high": 119, "low": 114, "close": 117, "volume": 17000, "adjclose": 117 },
+        { "date": "2025-02-02", "open": 117, "high": 121, "low": 116, "close": 119, "volume": 18000, "adjclose": 119 },
+        { "date": "2025-02-03", "open": 119, "high": 123, "low": 118, "close": 121, "volume": 19000, "adjclose": 121 }
+      ]
+    },
+    {
+      "meta": {
+        "symbol": "TV24.BA",
+        "currency": "ARS",
+        "exchangeName": "BCBA",
+        "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+        "longName": "Bono del Tesoro Nacional en Pesos con Ajuste por CER 2% Vencimiento 2024"
+      },
+      "body": [
+        { "date": "2025-01-25", "open": 105, "high": 110, "low": 103, "close": 107, "volume": 10000, "adjclose": 107 },
+        { "date": "2025-01-26", "open": 107, "high": 112, "low": 105, "close": 109, "volume": 12000, "adjclose": 109 },
+        { "date": "2025-01-27", "open": 109, "high": 113, "low": 108, "close": 111, "volume": 13000, "adjclose": 111 },
+        { "date": "2025-01-28", "open": 111, "high": 115, "low": 110, "close": 113, "volume": 14000, "adjclose": 113 },
+        { "date": "2025-01-29", "open": 113, "high": 117, "low": 112, "close": 115, "volume": 15000, "adjclose": 115 },
+        { "date": "2025-01-30", "open": 115, "high": 119, "low": 114, "close": 117, "volume": 16000, "adjclose": 117 },
+        { "date": "2025-01-31", "open": 117, "high": 121, "low": 116, "close": 119, "volume": 17000, "adjclose": 119 },
+        { "date": "2025-02-01", "open": 119, "high": 123, "low": 118, "close": 121, "volume": 18000, "adjclose": 121 },
+        { "date": "2025-02-02", "open": 121, "high": 125, "low": 120, "close": 123, "volume": 19000, "adjclose": 123 },
+        { "date": "2025-02-03", "open": 123, "high": 127, "low": 122, "close": 125, "volume": 20000, "adjclose": 125 }
+      ]
+    },
+    {
+      "meta": {
+        "symbol": "AE38.BA",
+        "currency": "ARS",
+        "exchangeName": "BCBA",
+        "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+        "longName": "Bono Ajustable por CER Vencimiento 2038"
+      },
+      "body": [
+        { "date": "2025-01-25", "open": 135, "high": 140, "low": 133, "close": 137, "volume": 10000, "adjclose": 137 },
+        { "date": "2025-01-26", "open": 137, "high": 142, "low": 135, "close": 139, "volume": 12000, "adjclose": 139 },
+        { "date": "2025-01-27", "open": 139, "high": 144, "low": 138, "close": 141, "volume": 13000, "adjclose": 141 },
+        { "date": "2025-01-28", "open": 141, "high": 146, "low": 140, "close": 143, "volume": 14000, "adjclose": 143 },
+        { "date": "2025-01-29", "open": 143, "high": 148, "low": 142, "close": 145, "volume": 15000, "adjclose": 145 },
+        { "date": "2025-01-30", "open": 145, "high": 150, "low": 144, "close": 147, "volume": 16000, "adjclose": 147 },
+        { "date": "2025-01-31", "open": 147, "high": 152, "low": 146, "close": 149, "volume": 17000, "adjclose": 149 },
+        { "date": "2025-02-01", "open": 149, "high": 154, "low": 148, "close": 151, "volume": 18000, "adjclose": 151 },
+        { "date": "2025-02-02", "open": 151, "high": 156, "low": 150, "close": 153, "volume": 19000, "adjclose": 153 },
+        { "date": "2025-02-03", "open": 153, "high": 158, "low": 152, "close": 155, "volume": 20000, "adjclose": 155 }
+      ]
+    },
+    {
+      "meta": {
+        "symbol": "DICP.BA",
+        "currency": "ARS",
+        "exchangeName": "BCBA",
+        "fullExchangeName": "Bolsa de Comercio de Buenos Aires",
+        "longName": "Bono Discount Dólares"
+      },
+      "body": [
+        { "date": "2025-01-25", "open": 155, "high": 160, "low": 153, "close": 157, "volume": 10000, "adjclose": 157 },
+        { "date": "2025-01-26", "open": 157, "high": 162, "low": 155, "close": 159, "volume": 12000, "adjclose": 159 },
+        { "date": "2025-01-27", "open": 159, "high": 164, "low": 157, "close": 161, "volume": 13000, "adjclose": 161 },
+        { "date": "2025-01-28", "open": 161, "high": 166, "low": 160, "close": 163, "volume": 14000, "adjclose": 163 },
+        { "date": "2025-01-29", "open": 163, "high": 168, "low": 162, "close": 165, "volume": 15000, "adjclose": 165 },
+        { "date": "2025-01-30", "open": 165, "high": 170, "low": 164, "close": 167, "volume": 16000, "adjclose": 167 },
+        { "date": "2025-01-31", "open": 167, "high": 172, "low": 166, "close": 169, "volume": 17000, "adjclose": 169 },
+        { "date": "2025-02-01", "open": 169, "high": 174, "low": 168, "close": 171, "volume": 18000, "adjclose": 171 },
+        { "date": "2025-02-02", "open": 171, "high": 176, "low": 170, "close": 173, "volume": 19000, "adjclose": 173 },
+        { "date": "2025-02-03", "open": 173, "high": 178, "low": 172, "close": 175, "volume": 20000, "adjclose": 175 }
+      ]
+    }
+    ]
+
+  

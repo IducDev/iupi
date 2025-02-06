@@ -21,6 +21,7 @@ const imageMap: Record<ImgType, string> = {
 export const CarouselComunnity = () => {
   const { items } = useEducationStore();
     let icon = ""
+
   return (
     <div className="h-[33em] pt-4">
       <div className=" w-[23.5em] mx-auto">
@@ -46,7 +47,8 @@ export const CarouselComunnity = () => {
 
             return (
               <SwiperSlide key={id}>
-                <Link href="/app/community/game">
+              {/* <Link href={`/app/community/game/${id}`}></Link> */}
+                <Link href={`/app/community/game/1`}>
                 <div
                   className={`bg-primary100 flex flex-col w-[10em] h-[22em] gap-4 rounded-3xl justify-center p-4`}
                 >

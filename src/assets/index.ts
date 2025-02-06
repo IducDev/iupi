@@ -7,7 +7,7 @@ import Explorador from "./images/Explorador.svg";
 import CazadorUser from "./images/CazadorUser.svg";
 import SembradorUser from "./images/SembradorUser.svg";
 import ExploradorUser from "./images/ExploradorUser.svg";
-import SkipUser from "./images/SkipUser.svg";
+import SkipUser from "./images/skipUser.svg"
 import WarningBlue from "./icons/Warning.svg";
 import UserPhotoDefault from "./images/Profile.svg";
 import CazadorEnsign from "./ensign/CazadorEnsign.svg";
@@ -38,7 +38,12 @@ import CreditCardIcon from "./icons/CreditCard.svg";
 import GlobalNews from "./images/globalNews.svg";
 import MedicineNews from "./images/MedicineNews.svg";
 import CriptosNews from "./images/criptosNews.svg";
-import CarsNews from "./images/carsNews.svg"
+import CarsNews from "./images/carsNews.svg";
+import EducationActiveLarge from "./icons/educationActiveLarge.svg";
+import SuccessGame from "./images/SuccessGame.svg";
+import ShieldOn from "./icons/shieldOn.svg";
+import CrownOn from "./icons/CrownOn.svg";
+import LoserGame from "./images/LoserGame.svg"
 
 
 export {
@@ -82,5 +87,10 @@ export {
     GlobalNews,
     MedicineNews,
     CriptosNews,
-    CarsNews
+    CarsNews,
+    EducationActiveLarge, 
+    SuccessGame,
+    ShieldOn,
+    CrownOn, 
+    LoserGame
 }

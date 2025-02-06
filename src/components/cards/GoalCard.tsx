@@ -40,7 +40,7 @@ export default function GoalCard({ goals }: GoalsCardProps) {
 	const goalList = Array.isArray(goals) ? goals : [goals]
 
 	return (
-		<div className='flex flex-col p-4 space-y-6 bg-white50 rounded-2xl lg:w-[90%] lg:mx-auto'>
+		<div className='flex flex-col p-4 space-y-6 shadow-lg bg-white50 rounded-2xl lg:w-[90%] lg:mx-auto'>
 			{/* Header */}
 			<div className='flex items-center justify-between'>
 				<div className='flex items-center space-x-2'>
@@ -48,6 +48,7 @@ export default function GoalCard({ goals }: GoalsCardProps) {
 					<h6 className='text-h6-bold text-white900'>Tus metas</h6>
 				</div>
 			</div>
+			<p className='text-p2-regular text-white700'>Aquí puedes ajustar y revisar tus metas, asegúrate de que cada objetivo esté alineado con tus sueños y aspiraciones.</p>
 
 			{/* Goals */}
 			<div className='space-y-6'>
@@ -57,7 +58,7 @@ export default function GoalCard({ goals }: GoalsCardProps) {
 					return (
 						<div
 							key={index}
-							className='flex items-center justify-between bg-primary100 p-4 rounded-lg shadow-sm'
+							className='flex items-center justify-between  p-4 rounded-lg shadow-sm'
 						>
 							{/* Icon and text */}
 							<div className='flex items-center space-x-3'>
@@ -87,18 +88,18 @@ export default function GoalCard({ goals }: GoalsCardProps) {
 
 			{/* Footer */}
 			<div className='flex items-center justify-center w-full space-x-4'>
-				<Link href={'#'} passHref className='w-full'>
-					<Button size='medium' variant='solid' className='rounded-3xl w-full'>
+				<Link href={'/app/home/goals'} passHref className='w-full'>
+					<Button size='medium' className='rounded-3xl w-full bg-accent25'>
 						Ver más
 					</Button>
 				</Link>
-				<Link href={'#'} passHref className='w-full'>
+				<Link href={'/app/home/goals'} passHref className='w-full'>
 					<Button
 						size='medium'
 						variant='outline'
 						className='rounded-3xl w-full bg-white100 border-none shadow-sm text-white900'
 					>
-						Editar
+						Nueva meta
 					</Button>
 				</Link>
 			</div>

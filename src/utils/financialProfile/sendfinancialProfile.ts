@@ -62,9 +62,9 @@ async function sendProfileFinance(test: TestData): Promise<void> {
             },
           }
         );
-        console.log("financialData", updatedProfile)
-        console.log("idUser", userId)
-        console.log("response",response )
+        // console.log("financialData", updatedProfile)
+        // console.log("idUser", userId)
+        // console.log("response",response )
 
         const profileData = response.data;
 
