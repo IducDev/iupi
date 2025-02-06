@@ -20,14 +20,7 @@ export default function TimeChart() {
 	
 
 	// Filtrar datos para la categoría seleccionada
-	interface DataItem {
-		time: string;
-		Acciones: number;
-		Inmobiliario: number;
-		Bonos: number;
-		Energía: number;
-		Tec: number;
-	}
+	
 
 	const filteredData = data.map((item:any) => ({
 		time: item.time,
