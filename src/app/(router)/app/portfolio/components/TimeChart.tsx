@@ -9,7 +9,6 @@ export default function TimeChart() {
 
 	// Datos basados en la imagen
 	const categories = ['Acciones', 'Inmobiliario', 'Bonos', 'Energía', 'Tec'];
-	const timeRanges = ['1:00 - 6:00', '6:00 - 12:00', '12:00 - 18:00', '18:00 - 1:00'];
 
 	// Datos de ejemplo para el gráfico (puedes reemplazarlos con datos reales)
 	const data = [
@@ -18,13 +17,22 @@ export default function TimeChart() {
 		{ time: '12:00 - 18:00', Acciones: 60, Inmobiliario: 50, Bonos: 40, Energía: 70, Tec: 30 },
 		{ time: '18:00 - 1:00', Acciones: 70, Inmobiliario: 60, Bonos: 50, Energía: 80, Tec: 40 },
 	];
+	
 
 	// Filtrar datos para la categoría seleccionada
-	const filteredData = data.map((item: any) => ({
+	interface DataItem {
+		time: string;
+		Acciones: number;
+		Inmobiliario: number;
+		Bonos: number;
+		Energía: number;
+		Tec: number;
+	}
+
+	const filteredData = data.map((item:any) => ({
 		time: item.time,
 		[selectedCategory]: item[selectedCategory],
 	}));
-
 	return (
 		<div className="p-4 bg-white rounded-lg shadow-md">
 			<h2 className="text-xl font-bold mb-4">Distribución de Inversiones por Horario</h2>
