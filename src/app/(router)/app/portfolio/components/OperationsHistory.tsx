@@ -104,7 +104,7 @@ export default function OperationsHistory() {
 	const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
 	const currentOperations = mockOperations.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
-	const renderOperation = (operation) => (
+	const renderOperation = (operation:any) => (
 		<div key={operation.id} className="flex items-center justify-between py-4 border-b">
 			<div className="flex flex-col">
 				<div className="flex items-center gap-1">
