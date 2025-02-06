@@ -20,7 +20,7 @@ export default function TimeChart() {
 	];
 
 	// Filtrar datos para la categoría seleccionada
-	const filteredData = data.map((item) => ({
+	const filteredData = data.map((item: any) => ({
 		time: item.time,
 		[selectedCategory]: item[selectedCategory],
 	}));
