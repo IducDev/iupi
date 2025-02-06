@@ -32,7 +32,7 @@ export default function Home() {
     getPortfolios()
     fetchProfile();
     getUserData();
-  }, [modalState]);
+  }, []);
 
 
   const userGoals = [
