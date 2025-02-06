@@ -39,17 +39,17 @@ export default function Home() {
     {
       title: "Mi propia casa en el interior",
       amount: 5000000,
-      mode: 'saving'
+      mode: 'saving' as "saving"
     },
     {
       title: "Viaje a Japon con millas",
       amount: 250000,
-      mode: 'pleasure'
+      mode: 'pleasure' as "pleasure"
     },
     {
       title: "Comprar un automovil",
       amount: 1000000,
-      mode: 'buying'
+      mode: 'buying' as "buying"
     }
   ];
 
